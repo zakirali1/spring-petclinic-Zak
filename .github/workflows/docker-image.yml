@@ -38,5 +38,6 @@ jobs:
     
     - name: Publish Docker image to JFrog Artifactory
       run: |
+        jf docker tag spring-pet-clinic:latest zaktest.jfrog.io/artifactory/api/docker/petclinic-docker/spring-pet-clinic:latest
         jf docker push zaktest.jfrog.io/artifactory/api/docker/petclinic-docker/spring-pet-clinic:latest  
         
