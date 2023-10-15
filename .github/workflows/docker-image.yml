@@ -11,20 +11,21 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        java: [ '17' ]
 
     steps:
-    - name: Set up Java
+    - uses: actions/checkout@v3
+    - name: Set up JDK ${{matrix.java}}
       uses: actions/setup-java@v2
       with:
-        java-version: 11
-
-    - name: Compile the code
-      run: |
-        ./mvnw compile
-          
-    - name: Run the tests
-      run: |
-        ./mvnw test
+        java-version: ${{matrix.java}}
+        distribution: 'adopt'
+        cache: maven
+    - name: Build with Maven Wrapper
+      run: ./mvnw -B package
+    
     - uses: actions/checkout@v3
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag spring-pet-clinic:$(date +%s)
