@@ -40,5 +40,5 @@ jobs:
       run: |
         jf docker tag spring-pet-clinic:latest zaktest.jfrog.io/petclinic-docker/spring-pet-clinic:latest
         jf docker push zaktest.jfrog.io/petclinic-docker/spring-pet-clinic:latest --build-name=spring-build --build-number=1.0.0  
-        jf bp spring-build 1.0.0
+        jf rt bp spring-build 1.0.0
         
