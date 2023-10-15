@@ -38,5 +38,5 @@ jobs:
     
     - name: Publish Docker image to JFrog Artifactory
       run: |
-        jf rt docker image push spring-pet-clinic petclinic-docker:latest  
+        jf docker push spring-pet-clinic petclinic-docker:latest  
         
