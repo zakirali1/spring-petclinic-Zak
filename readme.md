@@ -5,7 +5,7 @@
 
 This is a fork of the spring-petclinic project, with an emphasis on integrating Github actions to build, test and release to a JFROG artificatory. In my workflow, I have included the compiling of the source code, testing of dependancies with Maven central and succesfully building a docker image which is then published as a build to artifactory. 
 
-More details can be doing by following the link to the project via the following:  <a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">See the presentation here</a>
+More details can be found by following the link to the project via the following:  <a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">See the presentation here</a>
 
 I've also left the link to the main project, should you wish to contribute or fork the project for your own purposes.
 
