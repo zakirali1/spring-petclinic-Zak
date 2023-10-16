@@ -35,10 +35,6 @@ docker run -it spring-pet-clinic:latest bash
 ```
 
 
-4) Navigate to Petclinic
-
-    Visit [http://localhost:8080](http://localhost:8080) in your browser.
-
 
 ## Interesting Spring Petclinic branches and forks
 
