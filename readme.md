@@ -2,7 +2,11 @@
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/spring-projects/spring-petclinic) [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://github.com/codespaces/new?hide_repo_select=true&ref=main&repo=7517918)
 
+## About the Project
 
+This is a fork of the spring-petclinic project, with an emphasis on integration Github actions to build, test and release to a JFROG artificatory. In my workflow, I have included the compiling of the source code, testing of dependancies with Maven central and succesfully building a docker image which is then published as a build to artifactory. 
+
+more details can be doing by following the link to the project via the following:  <a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">See the presentation here</a>
 
 
 ## Understanding the Spring Petclinic application with a few diagrams
