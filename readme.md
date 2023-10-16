@@ -30,10 +30,19 @@ docker pull zaktest.jfrog.io/petclinic-docker/spring-pet-clinic:latest
 ```
 
 ```
-docker run -it spring-pet-clinic:latest bash
+docker run zaktest.jfrog.io/petclinic-docker/spring-pet-clinic:latest
+
+```
+If your ports have not mapped correctly to the container port, then run the following: 
+
+```
+sudo docker run -p 8080:8080 zaktest.jfrog.io/petclinic-docker/spring-pet-clinic:latest
 
 ```
 
+You should now see the app succesfully running, and you can check with the following on your browser:
+
+http://localhost:8080
 
 
 ## Interesting Spring Petclinic branches and forks
